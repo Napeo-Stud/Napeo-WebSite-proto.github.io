@@ -102,6 +102,7 @@ img {
 .flx-win {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
     margin: 4rem 8vw 1rem 8vw;
     height: 50vh;
 }
