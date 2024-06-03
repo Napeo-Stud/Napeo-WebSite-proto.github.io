@@ -1,0 +1,84 @@
+/* Spécifiques à #links-pages */
+
+#links-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: visible;
+}
+#links-page main {
+    min-height: 40rem;
+}
+
+#prfl p {
+    min-width: unset;
+    width: 12rem;
+    text-align: center;
+}
+
+@media (orientation: landscape) and (max-height: 45.5rem){
+    #links-page main{
+        flex-direction: row;
+        min-height: 17rem;
+    }
+
+    #prfl p{display: none;}
+    
+}
+
+#prfl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#linkbox {
+    margin: 0 10vw 1rem 10vw;
+    min-width: 18.5rem;
+    max-width: 32rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+@media (orientation: landscape) and (max-height: 45.5rem){
+    #linkbox {
+        margin: 1rem 4.5rem 1rem 1rem;
+    }
+    
+}
+
+#linkbox button {
+    width: 5.5rem;
+    aspect-ratio: 1/1;
+    margin: 0.3rem;
+    display: flex;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 550%;
+    background-color: var(--text-color);
+    transition: 
+        box-shadow 0.7s ease,
+        transform 0.7s ease
+    ;
+    z-index: 0;
+    overflow: hidden;
+}
+#linkbox button:hover {transform: translateY(-.4rem);}
+
+#linkbox button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#linkbox button a svg {
+    height: 50%;
+    aspect-ratio: 1/1;
+    width: unset;
+    fill: var(--background-color);
+}

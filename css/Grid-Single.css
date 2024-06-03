@@ -1,0 +1,93 @@
+/* --------------- Single Grid ------------- */
+
+#frm {
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid {
+    display: grid;
+    height: 80%;
+    aspect-ratio: 4 / 5;
+    grid-template-columns: 43fr 57fr;
+    grid-template-rows: 33fr 27fr 40fr;
+    grid-template-areas:
+    "txt img1"
+    "img2 img1"
+    "img2 arw";
+    /* grid-gap: .5rem; */
+}
+
+#arw-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: arw;
+    background-color: var(--accent-color);
+    overflow: visible;
+}
+
+@media (max-width: 770px) {
+    #frm {
+        height: unset;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+    }
+
+    #grid {
+        height: unset;
+        width: 70%;
+    }
+}
+
+.grid-win {
+    width: 100%;
+    border-radius: 2rem;
+    overflow:hidden;
+    z-index: 0;
+}
+
+#txt {
+    grid-area: txt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+    border-radius: 100rem;
+}
+
+#txt svg {
+    height: 57%;
+    aspect-ratio: 1/1;
+    overflow: visible;
+    animation: Rotate 10s linear infinite;
+}
+#circle {fill: transparent;}
+#svg-txt {
+    fill: var(--accent-color);
+    font-family: "Basteleur";
+    font-size: 2.67rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+@keyframes Rotate {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+#img1, #img2 {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: .6rem solid;
+    border-color: var(--accent-color);
+}
+#img1 {grid-area: img1;}
+#img2 {
+    grid-area: img2;
+    border-radius: 100rem 100rem 40rem 40rem;
+}

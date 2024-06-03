@@ -1,0 +1,39 @@
+/* Spécifiques à #frt-pages */
+#frt-pages {
+    width: 100vw;
+    overflow: scroll;
+    overflow-y: hidden;
+    z-index: -1;
+}
+
+#frt-pages main {
+    height: calc(100vh - 3rem);
+}
+
+#frt-pages footer {
+    bottom: 2.5rem;
+    padding-bottom: 0;
+}
+
+@media (max-width: 770px), (max-height: 400px) {
+    #frt-pages main {
+        height: calc(100vh - 5.5rem);
+    }
+
+    #frt-pages h1 {
+        font-size: 7rem;
+    }
+
+    #frt-pages h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 770px) and (min-height: 400px){
+    #frt-pages main {
+        height: fit-content;
+    }
+    #frt-pages footer {
+        bottom: .5rem;
+    }
+}

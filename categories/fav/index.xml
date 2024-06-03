@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fav on My New Hugo Site</title>
+    <link>https://napeo-stud.github.io/Site/categories/fav/</link>
+    <description>Recent content in Fav on My New Hugo Site</description>
+    <generator>Hugo 0.125.2</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 04 May 2024 18:10:37 +0200</lastBuildDate>
+    <atom:link href="https://napeo-stud.github.io/Site/categories/fav/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brillance</title>
+      <link>https://napeo-stud.github.io/Site/portfolio/brillance/</link>
+      <pubDate>Sat, 04 May 2024 18:10:37 +0200</pubDate>
+      <guid>https://napeo-stud.github.io/Site/portfolio/brillance/</guid>
+      <description>Bril­lance Notez que je peux changer les couleur de thème de chacun de mes articles 👀&#xA;Titre de paragraphe Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page. Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page. Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page.</description>
+    </item>
+    <item>
+      <title>Trou Noir</title>
+      <link>https://napeo-stud.github.io/Site/portfolio/blackhole/</link>
+      <pubDate>Sat, 04 May 2024 18:09:37 +0200</pubDate>
+      <guid>https://napeo-stud.github.io/Site/portfolio/blackhole/</guid>
+      <description>Black­hole Notez que je peux changer les couleur de thème de chacun de mes articles 👀&#xA;Titre de paragraphe Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page. Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page. Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page.</description>
+    </item>
+    <item>
+      <title>Objets</title>
+      <link>https://napeo-stud.github.io/Site/portfolio/objects/</link>
+      <pubDate>Sat, 04 May 2024 18:07:37 +0200</pubDate>
+      <guid>https://napeo-stud.github.io/Site/portfolio/objects/</guid>
+      <description>Objects Notez que je peux changer les couleur de thème de chacun de mes articles 👀&#xA;Titre de paragraphe Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page. Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page. Ceci est un paragraphe d&amp;rsquo;exemple à titre indicatif afin de voir à quoi peut ressembler du texte sur cette page.</description>
+    </item>
+  </channel>
+</rss>
