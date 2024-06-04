@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 behavior: 'auto'
             });
         }
-    });
+    }, { passive: false }); 
+    
+    // Ajoutez cette ligne pour activer la gestion du preventDefault
     
 });
 /* document.addEventListener('DOMContentLoaded', () => {

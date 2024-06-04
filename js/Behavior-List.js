@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             var delta = event.deltaY * .2;
             projList.scrollTop += delta;
-        });
+        }, { passive: false });
 
         article.addEventListener('touchstart', function(event) {
             startY = event.touches[0].pageY;
@@ -134,5 +134,5 @@ document.addEventListener("DOMContentLoaded", function() {
         
         var delta = event.deltaY * .2;
         projList.scrollTop += delta;
-    });
+    }, { passive: false });
 });
