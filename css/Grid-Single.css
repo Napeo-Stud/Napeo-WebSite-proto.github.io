@@ -83,6 +83,9 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: .6rem solid;
     border-color: var(--accent-color);
 }
@@ -91,3 +94,6 @@
     grid-area: img2;
     border-radius: 100rem 100rem 40rem 40rem;
 }
+
+#grid figure img {transition: transform .5s ease;}
+#grid figure img:hover {transform: scale(1.1);}
