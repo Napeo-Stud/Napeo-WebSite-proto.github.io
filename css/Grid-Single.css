@@ -56,7 +56,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--text-color);
-    border-radius: 100rem;
+    border-radius: 50%;
 }
 
 #txt svg {
@@ -69,7 +69,7 @@
 #svg-txt {
     fill: var(--accent-color);
     font-family: "Basteleur";
-    font-size: 2.67rem;
+    font-size: 265%;
     font-weight: bold;
     letter-spacing: -2px;
 }

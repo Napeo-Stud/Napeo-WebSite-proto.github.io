@@ -170,6 +170,7 @@ h1, h2, h3, h4 {
     margin-bottom: 1rem;
     max-width: 30rem;
     height: fit-content;
+    hyphens: auto;
 }
 
 h1 {
