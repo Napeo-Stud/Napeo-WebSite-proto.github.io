@@ -123,7 +123,7 @@ img {
     border-radius: 1rem;
     transition: transform .5s ease;
 }
-article:hover {transform: scale(1.01);}
+article:hover {transform: scale(1.035);}
 .caption a {
     display: flex;
     flex-direction: column;

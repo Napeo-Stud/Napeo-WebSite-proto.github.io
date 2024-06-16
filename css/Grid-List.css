@@ -1,0 +1,153 @@
+/* CSS spécifique à la grille de liens */
+
+#hrztl {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media (min-width: 770px) { 
+    footer {flex-direction: row-reverse;}
+}
+
+#linkgrid a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+@media (max-width: 770px) {
+    #frt-pages .link h2 {font-size: 2rem;}   
+}
+
+#linkgrid {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-columns: 21fr 13fr;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "news store"
+        "news asides"
+        "socials asides";
+    padding: 1rem;
+    height: 440px;
+    width: 38rem;
+    min-width: none;
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+}
+@media (max-width: 770px) {
+    #linkgrid {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        margin:0 1rem 1rem 1rem;
+    }
+
+    #news {aspect-ratio: 5/4;}
+}
+
+#linkgrid * {
+    border-radius: 1rem;
+    padding: .5rem;
+}
+#linkgrid * * {margin-bottom: .5rem;}
+#linkgrid p {
+    width: fit-content;
+    min-width: unset;
+    max-width: unset;
+    margin-bottom: .9rem;
+    font-weight: 500;
+}
+#asides p {margin-bottom: .5rem;}
+
+#news {
+    grid-area: news;
+    background-color: var(--secondary-color);
+    padding: 0;
+    overflow: hidden;
+}
+#news *{padding: 0;}
+#news h3 {
+    font-size: 1.5rem;
+    position: absolute;
+    transform: translate(-1.7rem, -1rem) rotate(-25deg);
+    padding: .4rem;
+    padding-bottom: .1rem;
+    background-color: var(--accent-color);
+    border-radius: 4rem;
+    z-index: 1;
+}
+#news h3:hover {
+    animation: Shake .5s ease-in;
+}
+
+@keyframes Shake {
+    0% {transform: translate(-1.7rem, -1rem) rotate(-25deg);}
+    33% {transform: translate(-1.7rem, -1rem) rotate(-35deg);}
+    66% {transform: translate(-1.7rem, -1rem) rotate(-15deg);}
+    100% {transform: translate(-1.7rem, -1rem) rotate(-25deg);}
+}
+
+#news h3 a {transform: translate(-.4rem, -.4rem);}
+#news figure {z-index: 0;}
+#news figure img {transition: transform .5s ease;}
+#news figure:hover img {transform: scale(1.05);}
+
+#store {
+    grid-area: store;
+    background-color: var(--accent-color);
+}
+#socials {
+    grid-area: socials;
+    background-color: var(--light-accent-color-1);
+}
+#asides {
+    grid-area: asides;
+    background-color: var(--light-accent-color-2);
+}
+
+#linkgrid button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    background-color: var(--text-color);
+    width: 100%;
+    transform: scale(1) translateY(0);
+    transition-property: font-weight, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+#linkgrid button:hover {
+    transform: scale(1.035);
+    font-weight: 700;
+}
+
+#linkgrid button svg {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin: 0 .5rem;
+    transform: scale(2.3) rotate(0deg);
+    transition: transform .3s ease;
+}
+#linkgrid button:hover svg {
+    transform: scale(2.7) rotate(10deg);
+}
