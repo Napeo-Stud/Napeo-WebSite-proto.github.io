@@ -101,6 +101,7 @@
 
 #news h3 a {transform: translate(-.4rem, -.4rem);}
 #news figure {z-index: 0;}
+#news figure a {z-index: 2;}
 #news figure img {transition: transform .5s ease;}
 #news figure:hover img {transform: scale(1.05);}
 
