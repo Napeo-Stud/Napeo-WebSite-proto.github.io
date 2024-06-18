@@ -6,7 +6,9 @@
 }
 
 @media (min-width: 770px) { 
-    footer {flex-direction: row-reverse;}
+    footer {
+        justify-content: right;
+    }
 }
 
 #linkgrid a {
